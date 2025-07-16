@@ -1,11 +1,170 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
+    background-image: linear-gradient(to left, rgba(215, 241, 250, 0.647), rgba(223, 254, 254, 0.252) );
     max-width: 800px;
     min-width: 400px;
+    margin: auto;
+    box-shadow: 0px -20px 7px rgba(0, 0, 0, 0.526);
+}
+
+header {
+    background-image: url(../imagens/mheader.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh; /* ou 600px, se preferir altura fixa */
+    width: 100%;
+}
+
+header > h1 {
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 5em;
+    font-family: "Cookie", cursive;
+    font-weight: lighter;
+}
+
+header > p {
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    font-size: 1.5em;
+}
+
+header > div {
+    background-color: rgb(155, 195, 238);
+    color: white;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    width: 21%;
+    border-radius: 8px;
+    margin: auto;
+    font-family: "Slabo 27px", serif;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.436);
+}
+
+main {
+    background-color: rgba(213, 245, 255, 0.53);
+    height: 50%;
+}
+
+.beneficio-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    gap: 30px;
+}
+
+.texto-beneficio {
+    max-width: 60%;
+}
+
+.texto-beneficio h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+}
+
+.texto-beneficio p {
+    font-size: 1.5em;
+    margin: 0;
+    padding-left: 30px;
+    line-height: 1.5;
+    font-family: "Slabo 27px", serif;
+}
+
+.produto {
+    width: 195px;
+    height: auto;
+}
+
+main > h3::before {
+    content: "\00A0\00A0\1F319";
+    font-size: 30px;
+}
+
+footer {
+    background-color: rgba(223, 254, 254, 0.112);
+}
+
+table {
+    border: 1px solid black;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+    max-width: 580px;
+    height: 150px;
+}
+
+.lateral {
+    text-align: justify;
+    padding-left: 20px;
+}
+
+caption {
+    font-size: 2em;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+tr, td {
+    border: 1px solid rgba(0, 0, 0, 0.297);
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+}
+
+thead > tr > th {
+    background-color: rgba(213, 245, 255, 0.53);
+    padding: 5px;
+    font-size: 1.2em;
+    border: 1px solid rgba(0, 0, 0, 0.297);
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+}
+
+div.footer2 {
+    background-color: rgb(255, 229, 234);
+    padding-top: 20px;
+    margin-top: 30px;
+    box-shadow: 0px 80px 7px rgba(0, 0, 0, 0.526);
+}
+
+footer > div > h4 {
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 5px;
+    font-family: "Slabo 27px", serif;
+}
+
+.fim {
+    text-align: center;
+    background-color: rgb(255, 168, 172);
+    padding: 10px;
+    width: 200px;
+    margin: auto;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.436);
+}
+
+.compre {
+    font-family: "Slabo 27px", serif;
 }
